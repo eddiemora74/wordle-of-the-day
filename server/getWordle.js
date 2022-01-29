@@ -9,7 +9,7 @@ export default async function getWordle() {
     const wordleOfTheDay = mainJsText.substring(
     mainJsText.indexOf("var La=[") + 8, 
     mainJsText.indexOf("]", mainJsText.indexOf("var La=[") + 8))
-    .replaceAll('"', "").split(",")[wordleNumber];
+    .replace(/"/g, "").split(",")[wordleNumber];
 
     return { number: wordleNumber, word: wordleOfTheDay };
 }
