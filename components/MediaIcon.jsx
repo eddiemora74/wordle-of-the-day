@@ -9,7 +9,7 @@ const MediaIconContainer = styled.div`
 const MediaIcon = ({link, src, alt}) => {
     return (
         <MediaIconContainer>
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
                 <Image
                     src={src}
                     alt={alt}
