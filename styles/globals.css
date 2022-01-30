@@ -22,6 +22,18 @@ img {
   }
 }
 
+@media screen and (max-height: 576px) {
+  #main-content {
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (max-height: 425px) {
+  html, body {
+    font-size: 1.4rem;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
