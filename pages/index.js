@@ -33,7 +33,7 @@ export default function Home({ number, word }) {
       <Text>WORDLE {number}</Text>
       <WordTileGroup>
         {word.split("").map((letter, idx) => (
-          <WordTile key={idx}>{letter}</WordTile>
+          <WordTile key={idx} idx={idx}>{letter}</WordTile>
         ))}
       </WordTileGroup>
     </Body>
