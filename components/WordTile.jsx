@@ -1,16 +1,18 @@
-import styled from "styled-components";
-
-const WordTile = styled.div`
-    line-height: 2rem;
-    text-transform: uppercase;
-    background-color: #538d4e;
-    padding: 1rem;
-    font-weight: bold;
-    color: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
+const WordTile = ({children}) => (
+    <div style={{
+        lineHeight: "2rem",
+        textTransform: "uppercase",
+        backgroundColor: "#538d4e",
+        padding: "1rem",
+        fontWeight: "bold",
+        color: "#fff",
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+    }}>
+        {children}
+    </div>
+)
 
 export default WordTile;

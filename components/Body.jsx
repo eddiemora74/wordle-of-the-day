@@ -1,11 +1,13 @@
-import styled from "styled-components";
-
-const Body  = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(25%);
-`;
+const Body = ({children}) => (
+    <div id='main-content' style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        transform: "translateY(25%)"
+    }}>
+        {children}
+    </div>
+)
 
 export default Body;

@@ -5,7 +5,7 @@ export default async function getWordle() {
     const today = new Date().getTime();
     const epoch = new Date(process.env.WORDLE_EPOCH).getTime();
     const dayInMS = 86400000;
-    const wordleNumber = Math.floor((today - epoch) / dayInMS);
+    const number = Math.floor((today - epoch) / dayInMS);
 
     // Make http request to get the wordle markup.
     const wordleText = await (await fetch(process.env.WORDLE_BASE_URL)).text();
@@ -26,5 +26,7 @@ export default async function getWordle() {
         .replace(/"/g, "")
         .split(",");
 
-    return { number: wordleNumber, word: wordleList[wordleNumber] };
+    const word = wordleList[number];
+
+    return { number, word };
 }

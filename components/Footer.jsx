@@ -1,13 +1,15 @@
-import styled from "styled-components";
-
-const Footer = styled.div`
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-`;
+const Footer = ({children}) => (
+    <div style={{
+        position: "fixed",
+        bottom: "20px",
+        left: "50%",
+        transform: "translateX(-50%)",
+        display: "grid",
+        gridTemplateColumns: "repeat(2, 1fr)",
+        gridGap: "20px"
+    }}>
+        {children}
+    </div>
+)
 
 export default Footer;

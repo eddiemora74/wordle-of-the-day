@@ -28,7 +28,7 @@ export default function Home({ number, word }) {
     <Head>
       <title>Wordle of the day</title>
     </Head>
-    <Body id='main-content'>
+    <Body>
       <Text>WORDLE {number}</Text>
       <WordTileGroup>
         {word.split("").map((letter, idx) => (

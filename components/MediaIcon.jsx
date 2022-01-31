@@ -1,10 +1,14 @@
-import styled from "styled-components";
 import Image from "next/image";
 
-const MediaIconContainer = styled.div`
-    cursor: pointer;
-    opacity: 0.5;
-`;
+const MediaIconContainer = ({children}) => (
+    <div style={{
+        cursor: "pointer",
+        opacity: "0.5"
+    }}>
+        {children}
+    </div>
+)
+
 
 const MediaIcon = ({link, src, alt}) => {
     return (

@@ -1,9 +1,11 @@
-import styled from "styled-components";
-
-const WordTileGroup = styled.div`
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 5px;
-`;
+const WordTileGroup = ({children}) => (
+    <div style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(5, 1fr)",
+        gridGap: "5px"
+    }}>
+        {children}
+    </div>
+)
 
 export default WordTileGroup;
