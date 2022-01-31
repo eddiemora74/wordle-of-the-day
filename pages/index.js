@@ -27,6 +27,7 @@ export default function Home({ number, word }) {
     <>
     <Head>
       <title>Wordle of the day</title>
+      <meta name="description" content="An application meant to give you the wordle of the day to make you look like a genius every time." />
     </Head>
     <Body>
       <Text>WORDLE {number}</Text>
