@@ -38,10 +38,15 @@ img {
   0% {
       transform: rotateX(-180deg);
   }
-  50% {
+  40% {
     transform: rotateX(-270deg);
     background-color: #121213;
     color: transparent;
+  }
+  80% {
+    transform: rotateX(-360deg);
+    background-color: #538d4e;
+    color: #fff;
   }
   100% {
     transform: rotateX(-360deg);
@@ -50,9 +55,30 @@ img {
   }
 }
 
+@keyframes bouncer {
+  0% {
+    transform: translateY(0%);
+  }
+  33% {
+    transform: translateY(-50%);
+  }
+  66% {
+    transform: translateY(0%);
+  }
+  83% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+
+}
+
 .active {
   background-color: #538d4e !important;
   color: #fff !important;
+  animation-name: bouncer !important;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 * {

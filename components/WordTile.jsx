@@ -18,8 +18,8 @@ const WordTile = ({idx, children}) => {
         alignItems: "center",
         animationName: "flipper",
         animationIterationCount: 1,
-        animationDuration: "1s",
-        animationDelay: (idx * 0.15) + 1 + "s",
+        animationDuration: "0.7s",
+        animationDelay: (idx * 0.10) + 1 + "s",
         animationTimingFunction: "linear"
     }}>
         {children}
