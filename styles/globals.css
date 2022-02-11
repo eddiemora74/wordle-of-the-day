@@ -38,12 +38,12 @@ img {
   0% {
       transform: rotateX(-180deg);
   }
-  40% {
+  30% {
     transform: rotateX(-270deg);
     background-color: #121213;
     color: transparent;
   }
-  80% {
+  60% {
     transform: rotateX(-360deg);
     background-color: #538d4e;
     color: #fff;
@@ -63,9 +63,9 @@ img {
     transform: translateY(-50%);
   }
   66% {
-    transform: translateY(0%);
+    transform: translateY(20%);
   }
-  83% {
+  80% {
     transform: translateY(-25%);
   }
   100% {
@@ -78,7 +78,7 @@ img {
   background-color: #538d4e !important;
   color: #fff !important;
   animation-name: bouncer !important;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-timing-function: ease-out !important;
 }
 
 * {
