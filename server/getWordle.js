@@ -19,7 +19,7 @@ export default async function getWordle() {
     const mainJsText = await (await fetch(`${process.env.WORDLE_BASE_URL}main.${hash}.js`)).text();
 
     // Find the list of all possible values.
-    const listFindStart = mainJsText.indexOf(process.env.WORDLE_LIST_FIND_START) + process.env.WORDLE_LIST_FIND_START.length;
+    const listFindStart = mainJsText.indexOf(process.env.WORDLE_LIST_FIND_START) - 1;
     const listFindEnd = mainJsText.indexOf(process.env.WORDLE_LIST_FIND_END, listFindStart);
     const wordleList = mainJsText
         .substring(listFindStart, listFindEnd)
